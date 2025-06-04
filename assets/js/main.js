@@ -1,32 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Collapse navbar on mobile after clicking a link
   const navLinks = document.querySelectorAll('.nav-link');
   const navbarCollapseEl = document.querySelector('.navbar-collapse');
-  const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapseEl);
 
-  // Collapse menu first, then scroll -> prevents overshoot on mobile
+  const collapseInstance = bootstrap.Collapse.getOrCreateInstance(
+    navbarCollapseEl,
+    { toggle: false }
+  );
+
+  // Close menu after clicking a link on small screens, then smooth-scroll
   navLinks.forEach(link => {
     link.addEventListener('click', ev => {
-      const targetSel = link.getAttribute('href');
-      const targetEl = document.querySelector(targetSel);
+      const targetEl = document.querySelector(link.getAttribute('href'));
       if (!targetEl) return;
 
-      const menuOpen = navbarCollapseEl.classList.contains('show');
-      if (menuOpen) {
+      if (navbarCollapseEl.classList.contains('show')) {
         ev.preventDefault();
-
-        // After the collapse animation finishes, scroll smoothly
         navbarCollapseEl.addEventListener(
           'hidden.bs.collapse',
-          () => {
-            // Let the layout fully settle
-            setTimeout(() => {
-              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100); // 100ms gives the browser time to repaint
-          },
+          () => targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' }),
           { once: true }
         );
-
         collapseInstance.hide();
       }
     });
