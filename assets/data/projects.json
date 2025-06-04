@@ -1,5 +1,5 @@
 {
-  "python": [
+  "Python": [
     {
       "title": "game projects",
       "link": "https://github.com/Andrew-1r/game_projects",
@@ -22,7 +22,7 @@
       "img": "assets/img/fancy_sokoban.jpg"
     }
   ],
-  "java": [
+  "Java": [
     {
       "title": "sheets",
       "link": "https://github.com/Andrew-1r/sheets",
@@ -31,37 +31,7 @@
       "img": "assets/img/sheets.jpg"
     }
   ],
-  "c_and_embedded": [
-    {
-      "title": "advanced calculator",
-      "link": "https://github.com/Andrew-1r/advanced_calculator",
-      "tech": "C, File I/O, Scientific Calc",
-      "description": "Command-line calculator that supports variables, math functions, and file input.",
-      "img": "assets/img/advanced_calculator.jpg"
-    },
-    {
-      "title": "parallel processing",
-      "link": "https://github.com/Andrew-1r/parallel_processing",
-      "tech": "C, Fork/Exec, Process Management",
-      "description": "Executes multiple terminal commands concurrently using child processes.",
-      "img": "assets/img/parallel_processing.jpg"
-    },
-    {
-      "title": "client server image processing",
-      "link": "https://github.com/Andrew-1r/client_server_image_processing",
-      "tech": "C, Multi-threading, Socket Programming",
-      "description": "Multi-threaded image processing client-server app supporting detection + replacement requests.",
-      "img": "assets/img/client_server_image_processing.jpg"
-    },
-    {
-      "title": "battleship microcontroller",
-      "link": "https://github.com/Andrew-1r/battleship_microcontroller",
-      "tech": "C, ATmega324A, Embedded Systems",
-      "description": "Battleship game running on an ATmega324A microcontroller with logic in project.c, game.c, and game.h.",
-      "img": "assets/img/battleship_microcontroller.jpg"
-    }
-  ],
-  "web_and_full_stack": [
+  "Web and Full Stack": [
     {
       "title": "movie ratings overlay",
       "link": "https://github.com/Andrew-1r/movie_ratings",
@@ -91,7 +61,7 @@
       "img": "assets/img/art_companion.jpg"
     }
   ],
-  "databases_and_sql": [
+  "Databases and SQL": [
     {
       "title": "data warehousing",
       "link": "https://github.com/Andrew-1r/data_warehousing",
@@ -112,6 +82,36 @@
       "tech": "PostgreSQL, FDW, DB Fragmentation",
       "description": "Implements horizontal fragmentation and distributed query logic using PostgreSQL FDWs.",
       "img": "assets/img/distributed_db_fdw.jpg"
+    }
+  ],
+  "C and Embedded Programming": [
+    {
+      "title": "advanced calculator",
+      "link": "https://github.com/Andrew-1r/advanced_calculator",
+      "tech": "C, File I/O, Scientific Calc",
+      "description": "Command-line calculator that supports variables, math functions, and file input.",
+      "img": "assets/img/advanced_calculator.jpg"
+    },
+    {
+      "title": "parallel processing",
+      "link": "https://github.com/Andrew-1r/parallel_processing",
+      "tech": "C, Fork/Exec, Process Management",
+      "description": "Executes multiple terminal commands concurrently using child processes.",
+      "img": "assets/img/parallel_processing.jpg"
+    },
+    {
+      "title": "client server image processing",
+      "link": "https://github.com/Andrew-1r/client_server_image_processing",
+      "tech": "C, Multi-threading, Socket Programming",
+      "description": "Multi-threaded image processing client-server app supporting detection + replacement requests.",
+      "img": "assets/img/client_server_image_processing.jpg"
+    },
+    {
+      "title": "battleship microcontroller",
+      "link": "https://github.com/Andrew-1r/battleship_microcontroller",
+      "tech": "C, ATmega324A, Embedded Systems",
+      "description": "Battleship game running on an ATmega324A microcontroller with logic in project.c, game.c, and game.h.",
+      "img": "assets/img/battleship_microcontroller.jpg"
     }
   ]
 }
