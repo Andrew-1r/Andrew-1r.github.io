@@ -7,24 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // Collapse menu first, then scroll -> prevents overshoot on mobile
   navLinks.forEach(link => {
     link.addEventListener('click', ev => {
-      const targetSel = link.getAttribute('href');           // e.g. "#Python"
+      const targetSel = link.getAttribute('href');
       const targetEl = document.querySelector(targetSel);
-      if (!targetEl) return;                                  // safety check
+      if (!targetEl) return;
 
       const menuOpen = navbarCollapseEl.classList.contains('show');
       if (menuOpen) {
-        ev.preventDefault();                                  // stop instant jump
+        ev.preventDefault();
 
         // After the collapse animation finishes, scroll smoothly
         navbarCollapseEl.addEventListener(
           'hidden.bs.collapse',
           () => targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' }),
-          { once: true }                                      // run only once
+          { once: true }
         );
 
-        collapseInstance.hide();                              // start animation
+        collapseInstance.hide();
       }
-      // Desktop or already-collapsed → let the default anchor behaviour run
     });
   });
 
