@@ -1,1 +1,27 @@
-<h1>Hello world</h1>
+---
+layout: default
+title: Portfolio
+---
+
+{% assign sections = "python,java,c_and_embedded,web_and_full_stack,databases_and_sql" | split: "," %}
+
+{% for section in sections %}
+{% assign projects = site.data.projects[section] %}
+{% if projects %}
+<h2 id="{{ section }}" class="mt-5 mb-4 text-capitalize text-primary">{{ section | replace: "_", " " }}</h2>
+<div class="row">
+    {% for project in projects %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 bg-secondary text-light border-light">
+            <img src="{{ project.img }}" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <p class="text-muted small">{{ project.tech }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endfor %}
