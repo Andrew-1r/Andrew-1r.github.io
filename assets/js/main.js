@@ -18,7 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // After the collapse animation finishes, scroll smoothly
         navbarCollapseEl.addEventListener(
           'hidden.bs.collapse',
-          () => targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+          () => {
+            // Let the layout fully settle
+            setTimeout(() => {
+              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100); // 100ms gives the browser time to repaint
+          },
           { once: true }
         );
 
