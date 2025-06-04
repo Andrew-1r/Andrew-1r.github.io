@@ -4,11 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbarCollapseEl = document.querySelector('.navbar-collapse');
   const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapseEl);
 
+  // Collapse menu first, then scroll -> prevents overshoot on mobile
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (navbarCollapseEl.classList.contains('show')) {
-        collapseInstance.hide();
+    link.addEventListener('click', ev => {
+      const targetSel = link.getAttribute('href');           // e.g. "#Python"
+      const targetEl = document.querySelector(targetSel);
+      if (!targetEl) return;                                  // safety check
+
+      const menuOpen = navbarCollapseEl.classList.contains('show');
+      if (menuOpen) {
+        ev.preventDefault();                                  // stop instant jump
+
+        // After the collapse animation finishes, scroll smoothly
+        navbarCollapseEl.addEventListener(
+          'hidden.bs.collapse',
+          () => targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+          { once: true }                                      // run only once
+        );
+
+        collapseInstance.hide();                              // start animation
       }
+      // Desktop or already-collapsed → let the default anchor behaviour run
     });
   });
 
@@ -21,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const section = document.createElement("div");
         const cleanCategory = category.replace(/_/g, ' ');
         section.innerHTML = `
-                    <div class="pt-1" id="${category}"></div>
+                    <div id="${category}" style="scroll-margin-top: 4.5rem;"></div>
                     <h1 class="text-primary fs-2 fw-bold mt-2 mb-4">${cleanCategory}</h1>
                     <div class="row">
                         ${projects.map(p => `
