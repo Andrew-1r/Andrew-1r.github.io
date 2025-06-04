@@ -1,4 +1,34 @@
 {
+  "Web_and_Full_Stack": [
+    {
+      "title": "movie ratings overlay",
+      "link": "https://github.com/Andrew-1r/movie_ratings",
+      "tech": "JavaScript, Chrome Extension, API",
+      "description": "Overlay movie ratings directly onto streaming site cards using an external API.",
+      "img": "assets/img/movie_ratings.jpg"
+    },
+    {
+      "title": "insighthub",
+      "link": "https://github.com/Andrew-1r/insighthub",
+      "tech": "Django, OpenAI, GridStack.js, PostgreSQL",
+      "description": "Dashboard builder for CSVs using OpenAI, user auth, and shareable visualizations.",
+      "img": "assets/img/insighthub.jpg"
+    },
+    {
+      "title": "risky business",
+      "link": "https://github.com/Andrew-1r/risky_business",
+      "tech": "HTML, CSS, JavaScript, Google Maps API",
+      "description": "Crime mapping tool built with public data and frontend tech to aid rental decisions.",
+      "img": "assets/img/risky_business.jpg"
+    },
+    {
+      "title": "art companion",
+      "link": "https://github.com/Andrew-1r/art_companion",
+      "tech": "React, Flask, OpenAI, Google Vision, Firebase",
+      "description": "AI-powered tool for generating and storing reference images using user uploads or GenAI prompts.",
+      "img": "assets/img/art_companion.jpg"
+    }
+  ],
   "Python": [
     {
       "title": "game projects",
@@ -31,37 +61,7 @@
       "img": "assets/img/sheets.jpg"
     }
   ],
-  "Web and Full Stack": [
-    {
-      "title": "movie ratings overlay",
-      "link": "https://github.com/Andrew-1r/movie_ratings",
-      "tech": "JavaScript, Chrome Extension, API",
-      "description": "Overlay movie ratings directly onto streaming site cards using an external API.",
-      "img": "assets/img/movie_ratings.jpg"
-    },
-    {
-      "title": "insighthub",
-      "link": "https://github.com/Andrew-1r/insighthub",
-      "tech": "Django, OpenAI, GridStack.js, PostgreSQL",
-      "description": "Dashboard builder for CSVs using OpenAI, user auth, and shareable visualizations.",
-      "img": "assets/img/insighthub.jpg"
-    },
-    {
-      "title": "risky business",
-      "link": "https://github.com/Andrew-1r/risky_business",
-      "tech": "HTML, CSS, JavaScript, Google Maps API",
-      "description": "Crime mapping tool built with public data and frontend tech to aid rental decisions.",
-      "img": "assets/img/risky_business.jpg"
-    },
-    {
-      "title": "art companion",
-      "link": "https://github.com/Andrew-1r/art_companion",
-      "tech": "React, Flask, OpenAI, Google Vision, Firebase",
-      "description": "AI-powered tool for generating and storing reference images using user uploads or GenAI prompts.",
-      "img": "assets/img/art_companion.jpg"
-    }
-  ],
-  "Databases and SQL": [
+  "Databases_and_SQL": [
     {
       "title": "data warehousing",
       "link": "https://github.com/Andrew-1r/data_warehousing",
@@ -84,7 +84,7 @@
       "img": "assets/img/distributed_db_fdw.jpg"
     }
   ],
-  "C and Embedded Programming": [
+  "C_and_Embedded_Programming": [
     {
       "title": "advanced calculator",
       "link": "https://github.com/Andrew-1r/advanced_calculator",
