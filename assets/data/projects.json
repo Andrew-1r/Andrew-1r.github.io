@@ -3,29 +3,29 @@
     {
       "title": "movie ratings overlay",
       "link": "https://github.com/Andrew-1r/movie_ratings",
-      "tech": "JavaScript, Chrome Extension, API",
-      "description": "Overlay movie ratings directly onto streaming site cards using an external API.",
+      "tech": "JavaScript, Chrome Extension, API Integration",
+      "description": "Overlay movie ratings directly onto streaming site cards using Chrome Extensions.",
       "img": "assets/img/movie_ratings.jpg"
     },
     {
       "title": "insighthub",
       "link": "https://github.com/Andrew-1r/insighthub",
-      "tech": "Django, OpenAI, GridStack.js, PostgreSQL",
-      "description": "Dashboard builder for CSVs using OpenAI, user auth, and shareable visualizations.",
+      "tech": "Django, OpenAI, JavaScript, Allauth, Bootstrap",
+      "description": "Dashboard builder for CSVs with CRUD and sharing functionalities, includes OpenAI chatbot assistant.",
       "img": "assets/img/insighthub.jpg"
     },
     {
       "title": "risky business",
       "link": "https://github.com/Andrew-1r/risky_business",
       "tech": "HTML, CSS, JavaScript, Google Maps API",
-      "description": "Crime mapping tool built with public data and frontend tech to aid rental decisions.",
+      "description": "Crime mapping tool built with public data and Google Maps API which shows amount of crime in suburbs in Australia.",
       "img": "assets/img/risky_business.jpg"
     },
     {
       "title": "art companion",
       "link": "https://github.com/Andrew-1r/art_companion",
       "tech": "React, Flask, OpenAI, Google Vision, Firebase",
-      "description": "AI-powered tool for generating and storing reference images using user uploads or GenAI prompts.",
+      "description": "AI-powered web application for generating and storing reference images.",
       "img": "assets/img/art_companion.jpg"
     }
   ],
@@ -33,14 +33,14 @@
     {
       "title": "game projects",
       "link": "https://github.com/Andrew-1r/game_projects",
-      "tech": "Python, Text Parsing, Markdown",
-      "description": "Simple Python scripts that convert raw fan wiki text into structured markdown.",
+      "tech": "Python, Text Parsing",
+      "description": "Simple Python scripts that aggregate raw text from fan sites for more complex analysis.",
       "img": "assets/img/game_projects.jpg"
     },
     {
       "title": "sokoban",
       "link": "https://github.com/Andrew-1r/sokoban",
-      "tech": "Python, OOP, Terminal UI",
+      "tech": "Python, OOP",
       "description": "Terminal-based implementation of Sokoban using object-oriented design.",
       "img": "assets/img/sokoban.jpg"
     },
@@ -65,14 +65,14 @@
     {
       "title": "data warehousing",
       "link": "https://github.com/Andrew-1r/data_warehousing",
-      "tech": "PostgreSQL, OLAP, Star Schema",
-      "description": "Implements star schema and builds data cubes using PostgreSQL for warehouse analytics.",
+      "tech": "PostgreSQL, OLAP, Star Schema, Data Cubes",
+      "description": "Implements star schema and builds data cubes using PostgreSQL for data warehouse analytics.",
       "img": "assets/img/data_warehousing.jpg"
     },
     {
       "title": "db triggers and constraints",
       "link": "https://github.com/Andrew-1r/triggers_constraints",
-      "tech": "PostgreSQL, Triggers, Constraints",
+      "tech": "PL/pgSQL, Triggers, Constraints",
       "description": "Adds business rules to a database via constraints and PL/pgSQL triggers.",
       "img": "assets/img/triggers_constraints.jpg"
     },
@@ -80,7 +80,7 @@
       "title": "distributed database with foreign data wrapper",
       "link": "https://github.com/Andrew-1r/distributed_db_fdw",
       "tech": "PostgreSQL, FDW, DB Fragmentation",
-      "description": "Implements horizontal fragmentation and distributed query logic using PostgreSQL FDWs.",
+      "description": "Implements horizontal fragmentation and distributed query logic, utilises PostgreSQL FDWs to join seperate databases.",
       "img": "assets/img/distributed_db_fdw.jpg"
     }
   ],
@@ -88,29 +88,29 @@
     {
       "title": "advanced calculator",
       "link": "https://github.com/Andrew-1r/advanced_calculator",
-      "tech": "C, File I/O, Scientific Calc",
+      "tech": "C, File I/O, Linux",
       "description": "Command-line calculator that supports variables, math functions, and file input.",
       "img": "assets/img/advanced_calculator.jpg"
     },
     {
       "title": "parallel processing",
       "link": "https://github.com/Andrew-1r/parallel_processing",
-      "tech": "C, Fork/Exec, Process Management",
-      "description": "Executes multiple terminal commands concurrently using child processes.",
+      "tech": "C, Child Processes, Linux",
+      "description": "Executes multiple Linux terminal commands in parallel using child processes.",
       "img": "assets/img/parallel_processing.jpg"
     },
     {
       "title": "client server image processing",
       "link": "https://github.com/Andrew-1r/client_server_image_processing",
-      "tech": "C, Multi-threading, Socket Programming",
-      "description": "Multi-threaded image processing client-server app supporting detection + replacement requests.",
+      "tech": "C, Multi-threading, Networking, Linux",
+      "description": "Multi-threaded image processing client-server app supporting detection and replacement requests.",
       "img": "assets/img/client_server_image_processing.jpg"
     },
     {
       "title": "battleship microcontroller",
       "link": "https://github.com/Andrew-1r/battleship_microcontroller",
       "tech": "C, ATmega324A, Embedded Systems",
-      "description": "Battleship game running on an ATmega324A microcontroller with logic in project.c, game.c, and game.h.",
+      "description": "A simple battleship game running on an ATmega324A microcontroller",
       "img": "assets/img/battleship_microcontroller.jpg"
     }
   ]
