@@ -15,6 +15,13 @@
       "img": "assets/img/insighthub.jpg"
     },
     {
+      "title": "chords",
+      "link": "https://andrew-1r.github.io/chords/",
+      "tech": "Python, HTML, Bootstrap, JavaScript",
+      "description": "Parses a given URL and extracts lyrics and chords. Also has autoscroll feature.",
+      "img": "assets/img/chords.jpg"
+    },
+    {
       "title": "risky business",
       "link": "https://github.com/Andrew-1r/risky_business",
       "tech": "HTML, CSS, JavaScript, Google Maps API",
